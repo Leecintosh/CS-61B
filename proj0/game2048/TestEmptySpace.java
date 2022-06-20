@@ -24,6 +24,7 @@ public class TestEmptySpace {
         };
 
         b = new Board(rawVals, 0);
+
         assertTrue("Board is full of empty space\n" + b,
                 Model.emptySpaceExists(b));
     }
@@ -114,7 +115,7 @@ public class TestEmptySpace {
     public void testFullBoard() {
         int[][] rawVals = new int[][] {
                 {2, 2, 2, 2},
-                {2, 2, 2, 2},
+                {1, 2, 2, 2},
                 {2, 2, 2, 2},
                 {2, 2, 2, 2},
         };
